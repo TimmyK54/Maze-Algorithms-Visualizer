@@ -97,7 +97,7 @@ public class MazePanel extends JPanel {
 	JRadioButton 
 		search_radiobutton_astar 			= new JRadioButton("A* Algorithm"), 
 		search_radiobutton_ida 				= new JRadioButton("Iterative Deepening A*"),	// may change to (or add) Dynamic Weighting
-		search_radiobutton_jps				= new JRadioButton("Jump Point Search"), 
+		search_radiobutton_jps				= new JRadioButton("Jump-Point Search"), 
 		search_radiobutton_dfs 				= new JRadioButton("Depth-First Search"), 
 		search_radiobutton_breadth 			= new JRadioButton("Breadth-First Search"),
 		search_radiobutton_best 			= new JRadioButton("Best-First Search"), 
