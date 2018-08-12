@@ -1,4 +1,6 @@
 import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  * 
@@ -9,6 +11,13 @@ import javax.swing.JFrame;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} 
+		catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+			System.err.println("Look and feel not set.");
+		}
 		
 		final int maze_size = 785;
 		final int ui_length = 300;

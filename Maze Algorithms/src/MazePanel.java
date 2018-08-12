@@ -165,7 +165,7 @@ public class MazePanel extends JPanel {
 		addMazeButton(generation_radiobutton_prim);
 		addMazeButton(generation_radiobutton_kruskal);
 		addMazeButton(generation_radiobutton_eller);
-		addMazeButton(generation_radiobutton_wilson);
+//		addMazeButton(generation_radiobutton_wilson);
 		addMazeButton(generation_radiobutton_huntkill);
 		addMazeButton(generation_radiobutton_dfs);
 		addMazeButton(generation_radiobutton_division);
@@ -173,24 +173,24 @@ public class MazePanel extends JPanel {
 		TitledBorder generation_selection_border = new TitledBorder(new EtchedBorder());
 		generation_selection_border.setTitleFont(box_title_font);
 		generation_selection_border.setTitle("Maze Generation Algorithm");
-		generation_selection_box.setPreferredSize(new Dimension(ui_length - 10, generation_button_group.getButtonCount() * 24 + 27));
+		generation_selection_box.setPreferredSize(new Dimension(ui_length - 10, generation_button_group.getButtonCount() * 28 + 28));
 		generation_selection_box.setBorder(generation_selection_border);
 			
 		// Maze search algorithm selection radio buttons
 		addSearchButton(search_radiobutton_astar);
-		addSearchButton(search_radiobutton_ida);
+//		addSearchButton(search_radiobutton_ida);
 		addSearchButton(search_radiobutton_jps);
 		addSearchButton(search_radiobutton_dfs);
 		addSearchButton(search_radiobutton_breadth);
 		addSearchButton(search_radiobutton_best);
-		addSearchButton(search_radiobutton_bi);
+//		addSearchButton(search_radiobutton_bi);
 		addSearchButton(search_radiobutton_deadend);
-		addSearchButton(search_radiobutton_backtracker);
+//		addSearchButton(search_radiobutton_backtracker);
 		
 		TitledBorder search_selection_border = new TitledBorder(new EtchedBorder());
 		search_selection_border.setTitleFont(box_title_font);
 		search_selection_border.setTitle("Maze Search Algorithm");
-		search_selection_box.setPreferredSize(new Dimension(ui_length - 10, search_button_group.getButtonCount() * 24 + 26));
+		search_selection_box.setPreferredSize(new Dimension(ui_length - 10, search_button_group.getButtonCount() * 28 + 28));
 		search_selection_box.setBorder(search_selection_border);
 		
 		// Generation buttons
@@ -246,7 +246,7 @@ public class MazePanel extends JPanel {
 		TitledBorder transpose_selection_border = new TitledBorder(new EtchedBorder());
 		transpose_selection_border.setTitleFont(box_title_font);
 		transpose_selection_border.setTitle("Transpose Nodes");
-		transpose_box.setPreferredSize(new Dimension(ui_length - 10, 84));
+		transpose_box.setPreferredSize(new Dimension(ui_length - 10, 90));
 		transpose_box.setBorder(transpose_selection_border);
 		
 		// Delay Sliders
@@ -289,7 +289,7 @@ public class MazePanel extends JPanel {
 		progress_label2.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 		progress_label3.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 		
-		progress_panel.setPreferredSize(new Dimension(ui_length - 10, 55));
+		progress_panel.setPreferredSize(new Dimension(ui_length - 10, 60));
 		progress_panel.add(progress_box);
 		progress_panel.setBorder(new EtchedBorder());
 		defaultProgBox();
